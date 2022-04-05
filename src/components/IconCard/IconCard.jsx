@@ -1,5 +1,10 @@
 const IconCard = () => {
-  return <div>Icon card</div>;
+  return (
+    <div>
+      <i className={'fa fa-car'}></i>
+      Icon card
+    </div>
+  );
 };
 
 export default IconCard;
