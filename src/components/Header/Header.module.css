@@ -1,0 +1,21 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  background-color: #000;
+}
