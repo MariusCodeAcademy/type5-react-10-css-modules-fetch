@@ -1,0 +1,20 @@
+.section {
+  background-color: #d2d2d2;
+  padding: 7% 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.para {
+  font-weight: light;
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid #3faad4;
+  border-radius: 10px;
+  padding: 20px 40px;
+  color: white;
+}
