@@ -3,3 +3,10 @@
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.border {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.container {}

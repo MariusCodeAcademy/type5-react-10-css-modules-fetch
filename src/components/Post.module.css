@@ -1,0 +1,22 @@
+.post {
+  padding: 0 30px 20px;
+  box-shadow: 5px 5px 20px lightblue;
+}
+
+.title {
+  letter-spacing: 5px;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 2rem;
+}
+
+.text {
+  text-decoration: underline;
+}
+
+.btn {
+  border: none;
+  background-color: orchid;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
