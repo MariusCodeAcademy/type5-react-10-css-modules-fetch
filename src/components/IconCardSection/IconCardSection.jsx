@@ -3,6 +3,8 @@ import SectionHeading from '../UI/SectionHeading';
 import css from './IconCardSection.module.css';
 import Btn from '../UI/Btn';
 import Container from './../UI/Container';
+import styled from 'styled-components';
+
 const data = {
   title: "Here's all the stuff I do.",
 };
@@ -28,9 +30,22 @@ const iconCardsData = [
   },
 ];
 
+const Section = styled.section`
+  background-color: #d2d2d2;
+  padding: 7% 0;
+  text-align: center;
+  box-shadow: 5px 5px 15px #7f7f7f;
+`;
+
+const Para = styled.p`
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 40px;
+`;
+
 const IconCardSection = () => {
   return (
-    <section className={css.section}>
+    <Section>
       <Container>
         <SectionHeading
           title={data.title}
@@ -41,10 +56,10 @@ const IconCardSection = () => {
             <IconCard key={iObj.id} {...iObj} />
           ))}
         </div>
-        <p className={css.para}>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+        <Para>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</Para>
         <Btn>See some of my recent work</Btn>
       </Container>
-    </section>
+    </Section>
   );
 };
 
