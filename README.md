@@ -11,3 +11,7 @@
 // sukurti Btn.js komponenta
 // perkelti stilius is IconCardSection
 // panaudoti IconCardSection <Btn title="click me">
+
+// Sukurti it atvaizuoti 1 image card
+// sukurti korteliu objektu masyva su id, image, title, text
+// atvaizduoti 6 korteles generuojant masyva

@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column; 
+}
+
+.img {
+  max-width: 100%;
+}
+
+.card-info {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.card-info h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.card-info p {
+  font-weight: 300;
+}
