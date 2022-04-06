@@ -2,6 +2,7 @@
   background-color: #d2d2d2;
   padding: 7% 0;
   text-align: center;
+  box-shadow: 5px 5px 15px #7f7f7f;
 }
 
 .title {
@@ -13,11 +14,3 @@
   text-align: center;
 }
 
-.btn {
-  border: 1px solid #3faad4;
-  border-radius: 10px;
-  padding: 20px 40px;
-  color: white;
-  font-weight: 900;
-  background-color: #3faad4;
-}

@@ -1,9 +1,10 @@
 import IconCard from '../IconCard/IconCard';
+import SectionHeading from '../UI/SectionHeading';
 import css from './IconCardSection.module.css';
+import Btn from './../Btn';
 const data = {
   title: "Here's all the stuff I do.",
 };
-// sudeti IconCardSection stilius is css failo
 
 const iconCardsData = [
   {
@@ -30,15 +31,17 @@ const IconCardSection = () => {
   return (
     <section className={css.section}>
       <div className='container'>
-        <h2 className={css.title}>{data.title}</h2>
-        <p className={css.para}>Odio turpis amet sed consequat eget posuere consequat.</p>
+        <SectionHeading
+          title={data.title}
+          subtitle='Odio turpis amet sed consequat eget posuere consequat.'
+        />
         <div className='icon-cards grid'>
           {iconCardsData.map((iObj) => (
             <IconCard key={iObj.id} {...iObj} />
           ))}
         </div>
         <p className={css.para}>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-        <button className={css.btn}>See some of my recent work</button>
+        <Btn>See some of my recent work</Btn>
       </div>
     </section>
   );
