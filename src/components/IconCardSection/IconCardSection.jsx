@@ -1,12 +1,14 @@
 import IconCard from '../IconCard/IconCard';
 import css from './IconCardSection.module.css';
-
+const data = {
+  title: "Here's all the stuff I do.",
+};
 // sudeti IconCardSection stilius is css failo
 const IconCardSection = () => {
   return (
     <section className={css.section}>
       <div className='container'>
-        <h2 className={css.title}>Here's all the stuff I do.</h2>
+        <h2 className={css.title}>{data.title}</h2>
         <p className={css.para}>Odio turpis amet sed consequat eget posuere consequat.</p>
         <div className='icon-cards grid'>
           <IconCard />

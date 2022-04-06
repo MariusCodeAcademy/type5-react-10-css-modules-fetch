@@ -1,0 +1,11 @@
+.card {
+  background-color: snow;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 15px #7f7f7f;
+  padding: 15px
+  
+}
+.icon {
+  font-size: 4rem;
+  color: tomato;
+}
