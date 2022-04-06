@@ -1,12 +1,12 @@
 import css from './IconCard.module.css';
 import Icon from '../UI/Icon';
 
-const IconCard = () => {
+const IconCard = (props) => {
   return (
     <div className={css.card}>
-      <Icon className={css.icon} icon='fa-comments' />
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, beatae.</p>
+      <Icon className={css.icon} icon={props.icon} />
+      <h3>{props.title}</h3>
+      <p>{props.text}</p>
     </div>
   );
 };

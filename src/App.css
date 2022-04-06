@@ -1,11 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .App {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 .grid {
   display: grid;
