@@ -1,7 +1,8 @@
-import Btn from '../Btn';
+import Btn from '../UI/Btn';
 import SectionHeading from '../UI/SectionHeading';
 import css from './ImageCardSection.module.css';
 import ImageCard from './../ImageCard/ImageCard';
+import Container from '../UI/Container';
 
 const imageCardData = [
   {
@@ -63,7 +64,7 @@ const imageCardData = [
 const ImageCardSection = () => {
   return (
     <section className={css.section}>
-      <div className='container'>
+      <Container>
         <SectionHeading
           title='Here’s some stuff I made recently.'
           subtitle='Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.'
@@ -75,7 +76,7 @@ const ImageCardSection = () => {
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sed.</p>
         <Btn>Get in touch with me</Btn>
-      </div>
+      </Container>
     </section>
   );
 };

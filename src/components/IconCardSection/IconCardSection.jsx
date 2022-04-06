@@ -1,7 +1,7 @@
 import IconCard from '../IconCard/IconCard';
 import SectionHeading from '../UI/SectionHeading';
 import css from './IconCardSection.module.css';
-import Btn from './../Btn';
+import Btn from '../UI/Btn';
 const data = {
   title: "Here's all the stuff I do.",
 };
