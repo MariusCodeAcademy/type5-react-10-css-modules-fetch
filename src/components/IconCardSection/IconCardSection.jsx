@@ -2,6 +2,7 @@ import IconCard from '../IconCard/IconCard';
 import SectionHeading from '../UI/SectionHeading';
 import css from './IconCardSection.module.css';
 import Btn from '../UI/Btn';
+import Container from './../UI/Container';
 const data = {
   title: "Here's all the stuff I do.",
 };
@@ -30,7 +31,7 @@ const iconCardsData = [
 const IconCardSection = () => {
   return (
     <section className={css.section}>
-      <div className='container'>
+      <Container>
         <SectionHeading
           title={data.title}
           subtitle='Odio turpis amet sed consequat eget posuere consequat.'
@@ -42,7 +43,7 @@ const IconCardSection = () => {
         </div>
         <p className={css.para}>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
         <Btn>See some of my recent work</Btn>
-      </div>
+      </Container>
     </section>
   );
 };
