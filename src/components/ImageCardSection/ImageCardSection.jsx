@@ -61,7 +61,17 @@ const imageCardData = [
   },
 ];
 
-const ImageCardSection = () => {
+const ImageCardSection = (props) => {
+  console.log('props.items ===', props.items);
+  // priklausomai ar gaunam props.items norim paduoti el generavimui
+  // visa imageCardData arba tiek kiek yra nurodyta items
+  // visas = imageCardData
+  // pirmi trys = imageCardData.slice(0, 3)
+  // pirmi iki kiek nurodyta = imageCardData.slice(0, props.items)
+  // salyga ? true : false
+  const filteredCards =
+    props.items > 0 ? imageCardData.slice(0, props.items) : imageCardData;
+
   return (
     <section id='imageSection' className={css.section}>
       <Container>
@@ -70,7 +80,7 @@ const ImageCardSection = () => {
           subtitle='Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.'
         />
         <div className='grid'>
-          {imageCardData.slice(0, 3).map((iObj) => (
+          {filteredCards.map((iObj) => (
             <ImageCard key={iObj.id} {...iObj} />
           ))}
         </div>

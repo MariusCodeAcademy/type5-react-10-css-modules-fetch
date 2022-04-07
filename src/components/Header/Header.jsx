@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import css from './Header.module.css';
 // isitraukti module.css
 // sudeti kur reikia klases headeriui, nav, a
@@ -6,15 +7,15 @@ const Header = () => {
   return (
     <header className={css.header}>
       <nav className={css.nav}>
-        <a className={css.navLink} href='#home'>
+        <Link className={css.navLink} to='/'>
           Home
-        </a>
-        <a className={css.navLink} href='#imageSection'>
+        </Link>
+        <a className={css.navLink} href='/#imageSection'>
           Image Section
         </a>
-        <a className={css.navLink} href='#contact'>
-          Contact
-        </a>
+        <Link className={css.navLink} to='/image-page'>
+          Image page
+        </Link>
       </nav>
     </header>
   );
