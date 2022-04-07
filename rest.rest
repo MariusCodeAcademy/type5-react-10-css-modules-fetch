@@ -1,0 +1,12 @@
+POST https://glittery-dull-snickerdoodle.glitch.me/v1/meds/
+Content-Type: application/json
+
+{
+  "name": "Xanax",
+  "description": "Relaxe your pet a lot"
+}
+
+
+###
+
+GET https://glittery-dull-snickerdoodle.glitch.me/v1/meds/

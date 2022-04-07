@@ -9,8 +9,8 @@ const Header = () => {
         <a className={css.navLink} href='#home'>
           Home
         </a>
-        <a className={css.navLink} href='#about'>
-          About
+        <a className={css.navLink} href='#imageSection'>
+          Image Section
         </a>
         <a className={css.navLink} href='#contact'>
           Contact

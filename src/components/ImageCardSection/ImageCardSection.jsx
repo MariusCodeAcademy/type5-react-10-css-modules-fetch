@@ -63,14 +63,14 @@ const imageCardData = [
 
 const ImageCardSection = () => {
   return (
-    <section className={css.section}>
+    <section id='imageSection' className={css.section}>
       <Container>
         <SectionHeading
           title='Here’s some stuff I made recently.'
           subtitle='Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.'
         />
         <div className='grid'>
-          {imageCardData.map((iObj) => (
+          {imageCardData.slice(0, 3).map((iObj) => (
             <ImageCard key={iObj.id} {...iObj} />
           ))}
         </div>
